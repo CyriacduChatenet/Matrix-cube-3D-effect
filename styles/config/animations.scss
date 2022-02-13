@@ -1,0 +1,116 @@
+@keyframes changeButtonFontColor {
+    0% {
+      color: $color-secondary;
+    }
+    25% {
+      color: #ff0000;
+    }
+    50% {
+      color: #0000ff;
+    }
+    75% {
+      color: rgb(255, 0, 242);
+    }
+    100% {
+      color: $color-thirdary;
+    }
+  }
+  
+  @keyframes TopPart {
+    0% {
+      transform: translateX(450px) translateY(150px);
+    }
+    100% {
+      transform: translateX(150px) translateY(150px) translateZ(-150px);
+    }
+  }
+  @keyframes RightPart {
+    0% {
+      transform: translateX(300px) translateY(150px);
+    }
+    100% {
+      transform: translateX(225px) translateY(150px) translateZ(-75px)
+        rotateY(90deg);
+    }
+  }
+  @keyframes FrontPart {
+    0% {
+      transform: translateX(150px) translateY(0px);
+    }
+    100% {
+      transform: translateX(150px) translateY(75px) translateZ(-75px)
+        rotateX(90deg);
+    }
+  }
+  @keyframes BottomPart {
+    0% {
+      transform: translateX(150px) translateY(300px);
+    }
+    100% {
+      transform: translateX(150px) translateY(225px) translateZ(-75px)
+        rotateX(-90deg);
+    }
+  }
+  @keyframes LeftPart {
+    0% {
+      transform: translateX(0px) translateY(150px);
+    }
+    100% {
+      transform: translateX(75px) translateY(150px) translateZ(-75px)
+        rotateY(-90deg);
+    }
+  }
+  
+  @keyframes TopPartDisassemble {
+    0% {
+      transform: translateX(150px) translateY(150px) translateZ(-150px);
+    }
+    100% {
+      transform: translateX(450px) translateY(150px);
+    }
+  }
+  @keyframes RightPartDisassemble {
+    0% {
+      transform: translateX(225px) translateY(150px) translateZ(-75px)
+        rotateY(90deg);
+    }
+    100% {
+      transform: translateX(300px) translateY(150px);
+    }
+  }
+  @keyframes FrontPartDisassemble {
+    0% {
+      transform: translateX(150px) translateY(75px) translateZ(-75px)
+        rotateX(90deg);
+    }
+    100% {
+      transform: translateX(150px) translateY(0px);
+    }
+  }
+  @keyframes BottomPartDisassemble {
+    0% {
+      transform: translateX(150px) translateY(225px) translateZ(-75px)
+        rotateX(-90deg);
+    }
+    100% {
+      transform: translateX(150px) translateY(300px);
+    }
+  }
+  @keyframes LeftPartDisassemble {
+    0% {
+      transform: translateX(75px) translateY(150px) translateZ(-75px)
+        rotateY(-90deg);
+    }
+    100% {
+      transform: translateX(0px) translateY(150px);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(30deg) rotateY(0);
+    }
+    100% {
+      transform: rotateX(-360deg) rotateY(360deg);
+    }
+  }  

@@ -1,0 +1,77 @@
+@import "./config/variables.scss";
+@import './config/animations.scss';
+@import './config/fonts.scss';
+@import './config/reset.scss';
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-primary;
+}
+
+.cube {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(190deg) rotateZ(45deg);
+}
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+.top {
+  background: $color-primary;
+  transform: translateX(450px) translateY(150px);
+}
+.bottom {
+  background: $color-primary-gradient;
+  transform: translateX(150px) translateY(300px);
+}
+.left {
+  background: $color-secondary-gradient;
+  transform: translateX(0px) translateY(150px);
+}
+.right {
+  background: $color-thirdary-gradient;
+  transform: translateX(300px) translateY(150px);
+}
+.front {
+  background: $color-fourthary-gradient;
+  transform: translateX(150px) translateY(0px);
+}
+.back {
+  background: $color-thirdary;
+  transform: translateX(150px) translateY(150px);
+}
+
+#btn {
+  padding: 0.5em 1.25em;
+  border: 1px solid $color-thirdary;
+  color: $color-secondary;
+  background-color: $color-primary;
+  font-family: $font-primary;
+  font-size: 25px;
+  &:hover {
+    border: 3px solid $color-thirdary;
+    -webkit-box-shadow: 5px 5px 29px 5px #00ff00;
+    box-shadow: 5px 5px 29px 5px #00ff00;
+    cursor: pointer;
+    animation: changeButtonFontColor 1s linear infinite;
+    transition: ease-in-out 0.4s;
+  }
+}
+h1{
+    color: $color-secondary;
+    font-size: 100px;
+    font-family: $font-primary;
+    color: $color-thirdary;
+}
